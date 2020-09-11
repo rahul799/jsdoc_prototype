@@ -1,14 +1,17 @@
 {
-    "source": {
-      "include": ["src"],
-      "includePattern": ".js$",
-      "excludePattern": "(node_modules/|docs)"
-    },
-    "plugins": ["./node_modules/tsd-jsdoc/dist/plugin"],
-    "opts": {
-      "recurse": true,
-      "destination": "./docs/",
-      "template": "./node_modules/tsd-jsdoc/dist"
-    }
+  "source": {
+    "include": ["src"],
+    "includePattern": ".js$",
+    "excludePattern": "(node_modules/|docs)"
+  },
+  "plugins": [ "./node_modules/tsd-jsdoc/dist/plugin"],
+  "templates": {
+    "cleverLinks": true,
+    "monospaceLinks": true
+  },
+  "opts": {
+    "recurse": true,
+    "destination": "./docs/",
+    "template": "./node_modules/tsd-jsdoc/dist"
   }
-  
+}
