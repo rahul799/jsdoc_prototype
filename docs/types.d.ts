@@ -1,34 +1,68 @@
 /**
- * Student Name
+ * a collection of one or more elements (nodes and edges)
  */
-declare const studentName = "John Doe";
+declare type eles = any;
 
 /**
- * Function to add two numbers
+ * a collection of a single element (node or edge)
  */
-declare function sum(a: number, b: number): void;
+declare type ele = any;
 
 /**
- * A person object with name, age and sayName method.
- * @property name - The person's name.
- * @property age - The person's age.
- * @property sayName - A function that alerts the person's name.
+ * a collection of one or more nodes
  */
-declare type Person = {
-    name: string;
-    age: number;
-    sayName: (...params: any[]) => any;
-};
+declare type nodes = any;
 
 /**
- * A person object with name, age and sayName method.
- * @property name - The person's name.
- * @property age - The person's age.
- * @property sayName - A function that alerts the person's name.
+ * a collection of one or more nodes
  */
-declare type Person = {
-    name: string;
-    age: number;
-    sayName: (...params: any[]) => any;
-};
+declare type selector = boolean;
+
+/**
+ * a collection of a single node
+ */
+declare type node = any;
+
+/**
+ * a collection of one or more edges
+ */
+declare type edges = any;
+
+/**
+ * a collection of a single edge
+ */
+declare type edge = any;
+
+/**
+ * a layout
+ */
+declare type layout = any;
+
+/**
+ * an animation
+ */
+declare type ani = any;
+
+declare namespace cy {
+    /**
+     * Add elements to the graph and return them
+     */
+    namespace add { }
+    /**
+     * Remove elements from the graph and return them.
+     */
+    namespace remove { }
+    /**
+     * Return a new, empty collection.
+     */
+    namespace collection { }
+    /**
+     * Get an element from its ID in a very performant way
+     */
+    namespace getElementById { }
+    /**
+     * Get an element from its ID in a very performant way
+     */
+    namespace batch { }
+}
 
