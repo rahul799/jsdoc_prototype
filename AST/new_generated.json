@@ -64,5 +64,79 @@
                 "descr": "Get an empty collection."
             }
         ]
+    },
+    {
+        "name": "cy.getElementById",
+        "pureAliases": [
+            "cy.$id"
+        ],
+        "descr": "Get an element from its ID in a very performant way",
+        "formats": [
+            {
+                "args": [
+                    {
+                        "name": "id",
+                        "descr": "The ID of the element to get."
+                    }
+                ],
+                "descr": "Get ID"
+            }
+        ]
+    },
+    {
+        "name": "cy.$",
+        "descr": "Get elements in the graph matching a selector or a filter function.",
+        "formats": [
+            {
+                "name": "cy.$",
+                "args": [
+                    {
+                        "name": "selector",
+                        "descr": "The selector the elements should match."
+                    }
+                ],
+                "descr": "Get elements in the graph matching the specified selector."
+            },
+            {
+                "name": "cy.elements",
+                "args": [
+                    {
+                        "name": "selector",
+                        "descr": "The selector the elements should match."
+                    }
+                ],
+                "descr": "Get elements in the graph matching the specified selector."
+            },
+            {
+                "name": "cy.nodes",
+                "args": [
+                    {
+                        "name": "selector",
+                        "descr": "The selector the elements should match."
+                    }
+                ],
+                "descr": "Get nodes in the graph matching the specified selector."
+            },
+            {
+                "name": "cy.edges",
+                "args": [
+                    {
+                        "name": "selector",
+                        "descr": "The selector the elements should match."
+                    }
+                ],
+                "descr": "Get edges in the graph matching the specified selector."
+            },
+            {
+                "name": "cy.filter",
+                "args": [
+                    {
+                        "name": "selector",
+                        "descr": "The selector the elements should match."
+                    }
+                ],
+                "descr": "Get elements in the graph matching the specified selector."
+            }
+        ]
     }
 ]

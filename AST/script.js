@@ -30,7 +30,6 @@ for(var i in words)
         }
     }
 }
-// console.log(types);
 
 for(var i in words)
 {
@@ -38,6 +37,12 @@ for(var i in words)
     if(words[i].memberof != undefined)
     {
         func.name = words[i].longname;
+
+        if(words[i].alias != undefined)
+        {
+            func.pureAliases = words[i].alias.split("|");
+        }
+
         func.descr = words[i].description;
         func.formats = [];
         
@@ -47,6 +52,17 @@ for(var i in words)
             for( var j in descr)
             {
                 var temp = {};
+
+                if( words[i].tags != undefined )
+                {
+                    var sub_names = words[i].tags.find(fn => fn.title == "sub_functions")
+                    console.log(sub_names);
+                    if(sub_names != undefined)
+                    {
+                        var arr = sub_names.value.split("|");
+                        temp.name = arr[j];
+                    }
+                }
 
                 temp.args = [];
                 temp.descr = descr[j];

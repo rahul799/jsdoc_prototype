@@ -334,6 +334,221 @@
         "params": []
     },
     {
+        "comment": "/**\n * @typedef {object} cy_getElementById\n * @property {object} id - The ID of the element to get.\n */",
+        "meta": {
+            "filename": "index.js",
+            "lineno": 56,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_getElementById",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The ID of the element to get.",
+                "name": "id"
+            }
+        ],
+        "longname": "cy_getElementById",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get an element from its ID in a very performant way\n * @memberof cy\n * @alias cy.$id\n * @param {...cy_getElementById} x - Get ID\n * @namespace cy.getElementById\n */",
+        "meta": {
+            "filename": "index.js",
+            "lineno": 62,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get an element from its ID in a very performant way",
+        "memberof": "cy",
+        "alias": "cy.$id",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_getElementById"
+                    ]
+                },
+                "variable": true,
+                "description": "Get ID",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "getElementById",
+        "longname": "cy.getElementById",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1525,
+                1555
+            ],
+            "filename": "index.js",
+            "lineno": 69,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000031",
+                "name": "getElementById",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "getElementById",
+        "longname": "getElementById",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_$\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n */",
+        "meta": {
+            "filename": "index.js",
+            "lineno": 73,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_$",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The selector the elements should match.",
+                "name": "selector"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The selector the elements should match.",
+                "name": "selector"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The selector the elements should match.",
+                "name": "selector"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The selector the elements should match.",
+                "name": "selector"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The selector the elements should match.",
+                "name": "selector"
+            }
+        ],
+        "longname": "cy_$",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get elements in the graph matching a selector or a filter function.\n * @memberof cy\n * @sub_functions cy.$|cy.elements|cy.nodes|cy.edges|cy.filter\n * @param {...cy_$} x - Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get nodes in the graph matching the specified selector. | Get edges in the graph matching the specified selector. | Get elements in the graph matching the specified selector.\n * @namespace cy.$\n */",
+        "meta": {
+            "filename": "index.js",
+            "lineno": 82,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get elements in the graph matching a selector or a filter function.",
+        "memberof": "cy",
+        "tags": [
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.$|cy.elements|cy.nodes|cy.edges|cy.filter",
+                "value": "cy.$|cy.elements|cy.nodes|cy.edges|cy.filter"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_$"
+                    ]
+                },
+                "variable": true,
+                "description": "Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get nodes in the graph matching the specified selector. | Get edges in the graph matching the specified selector. | Get elements in the graph matching the specified selector.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "$",
+        "longname": "cy.$",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2457,
+                2474
+            ],
+            "filename": "index.js",
+            "lineno": 89,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000035",
+                "name": "$",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "$",
+        "longname": "$",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
         "kind": "package",
         "longname": "package:undefined",
         "files": [
