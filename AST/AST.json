@@ -1,193 +1,13 @@
 [
     {
-        "comment": "/**\n * a collection of one or more elements (nodes and edges)\n * @typedef {object} eles\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 3,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "a collection of one or more elements (nodes and edges)",
-        "kind": "typedef",
-        "name": "eles",
-        "type": {
-            "names": [
-                "object"
-            ]
-        },
-        "longname": "eles",
-        "scope": "global"
-    },
-    {
-        "comment": "/**\n * a collection of a single element (node or edge)\n * @typedef {object} ele\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 8,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "a collection of a single element (node or edge)",
-        "kind": "typedef",
-        "name": "ele",
-        "type": {
-            "names": [
-                "object"
-            ]
-        },
-        "longname": "ele",
-        "scope": "global"
-    },
-    {
-        "comment": "/**\n * a collection of one or more nodes\n * @typedef {object} nodes\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 13,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "a collection of one or more nodes",
-        "kind": "typedef",
-        "name": "nodes",
-        "type": {
-            "names": [
-                "object"
-            ]
-        },
-        "longname": "nodes",
-        "scope": "global"
-    },
-    {
-        "comment": "/**\n * a collection of one or more nodes\n * @typedef {boolean} selector\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 18,
-            "columnno": 1,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "a collection of one or more nodes",
-        "kind": "typedef",
-        "name": "selector",
-        "type": {
-            "names": [
-                "boolean"
-            ]
-        },
-        "longname": "selector",
-        "scope": "global"
-    },
-    {
-        "comment": "/**\n * a collection of a single node\n * @typedef {object} node\t\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 23,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "a collection of a single node",
-        "kind": "typedef",
-        "name": "node",
-        "type": {
-            "names": [
-                "object"
-            ]
-        },
-        "longname": "node",
-        "scope": "global"
-    },
-    {
-        "comment": "/**\n * a collection of one or more edges\n * @typedef {object} edges\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 28,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "a collection of one or more edges",
-        "kind": "typedef",
-        "name": "edges",
-        "type": {
-            "names": [
-                "object"
-            ]
-        },
-        "longname": "edges",
-        "scope": "global"
-    },
-    {
-        "comment": "/**\n * a collection of a single edge\n * @typedef {object} edge\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 33,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "a collection of a single edge",
-        "kind": "typedef",
-        "name": "edge",
-        "type": {
-            "names": [
-                "object"
-            ]
-        },
-        "longname": "edge",
-        "scope": "global"
-    },
-    {
-        "comment": "/**\n * a layout\n * @typedef {object} layout\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 38,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "a layout",
-        "kind": "typedef",
-        "name": "layout",
-        "type": {
-            "names": [
-                "object"
-            ]
-        },
-        "longname": "layout",
-        "scope": "global"
-    },
-    {
-        "comment": "/**\n * an animation\n * @typedef {object} ani\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 43,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "an animation",
-        "kind": "typedef",
-        "name": "ani",
-        "type": {
-            "names": [
-                "object"
-            ]
-        },
-        "longname": "ani",
-        "scope": "global"
-    },
-    {
         "comment": "",
         "meta": {
             "range": [
-                656,
-                688
+                18,
+                50
             ],
             "filename": "index.js",
-            "lineno": 48,
+            "lineno": 3,
             "columnno": 4,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
@@ -208,7 +28,7 @@
         "comment": "/**\n * @namespace cy\n */",
         "meta": {
             "filename": "index.js",
-            "lineno": 51,
+            "lineno": 6,
             "columnno": 0,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
@@ -222,11 +42,11 @@
         "comment": "",
         "meta": {
             "range": [
-                721,
-                783
+                83,
+                145
             ],
             "filename": "index.js",
-            "lineno": 54,
+            "lineno": 9,
             "columnno": 4,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
@@ -247,11 +67,11 @@
         "comment": "",
         "meta": {
             "range": [
-                740,
-                780
+                102,
+                142
             ],
             "filename": "index.js",
-            "lineno": 55,
+            "lineno": 10,
             "columnno": 2,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
@@ -268,10 +88,58 @@
         "scope": "global"
     },
     {
-        "comment": "/**\n * Add elements to the graph and return them\n * @memberof cy\n * @param { ele | eles } x - A plain object that specifies the element or A collection of elements.\n * @namespace cy.add\n */",
+        "comment": "/**\n * @typedef {object} cy_add\n * @property {object} eleObj - A plain object that specifies the element.\n * @property {object} eleObjs - An array of elements specified by plain objects.\n * @property {object} eles - A collection of elements.\n */",
         "meta": {
             "filename": "index.js",
-            "lineno": 58,
+            "lineno": 13,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_add",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A plain object that specifies the element.",
+                "name": "eleObj"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "An array of elements specified by plain objects.",
+                "name": "eleObjs"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A collection of elements.",
+                "name": "eles"
+            }
+        ],
+        "longname": "cy_add",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Add elements to the graph and return them\n * @memberof cy\n * @param {...cy_add} x - Add a specified element to the graph. | Add the specified elements to the graph. | Add the specified elements to the graph.\n * @namespace cy.add\n */",
+        "meta": {
+            "filename": "index.js",
+            "lineno": 20,
             "columnno": 2,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
@@ -282,11 +150,11 @@
             {
                 "type": {
                     "names": [
-                        "ele",
-                        "eles"
+                        "cy_add"
                     ]
                 },
-                "description": "A plain object that specifies the element or A collection of elements.",
+                "variable": true,
+                "description": "Add a specified element to the graph. | Add the specified elements to the graph. | Add the specified elements to the graph.",
                 "name": "x"
             }
         ],
@@ -299,11 +167,11 @@
         "comment": "",
         "meta": {
             "range": [
-                978,
-                997
+                637,
+                656
             ],
             "filename": "index.js",
-            "lineno": 64,
+            "lineno": 26,
             "columnno": 0,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
@@ -323,10 +191,49 @@
         "params": []
     },
     {
-        "comment": "/**\n * Remove elements from the graph and return them.\n * @memberof cy\n * @param { eles | selector } x - A plain object that specifies the element or A collection of elements.\n * @namespace cy.remove\n */",
+        "comment": "/**\n * @typedef {object} cy_remove\n * @property {object} eles -A collection of elements to remove.\n * @property {object} selector - Elements matching this selector are removed.\n */",
         "meta": {
             "filename": "index.js",
-            "lineno": 68,
+            "lineno": 30,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_remove",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A collection of elements to remove.",
+                "name": "eles"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "Elements matching this selector are removed.",
+                "name": "selector"
+            }
+        ],
+        "longname": "cy_remove",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Remove elements from the graph and return them.\n * @memberof cy\n * @param {...cy_remove} x - Remove the specified elements. | Remove elements in the graph matching the specified selector.\n * @namespace cy.remove\n */",
+        "meta": {
+            "filename": "index.js",
+            "lineno": 36,
             "columnno": 2,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
@@ -337,11 +244,11 @@
             {
                 "type": {
                     "names": [
-                        "eles",
-                        "selector"
+                        "cy_remove"
                     ]
                 },
-                "description": "A plain object that specifies the element or A collection of elements.",
+                "variable": true,
+                "description": "Remove the specified elements. | Remove elements in the graph matching the specified selector.",
                 "name": "x"
             }
         ],
@@ -354,11 +261,11 @@
         "comment": "",
         "meta": {
             "range": [
-                1205,
-                1227
+                1065,
+                1087
             ],
             "filename": "index.js",
-            "lineno": 74,
+            "lineno": 42,
             "columnno": 0,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
@@ -378,16 +285,24 @@
         "params": []
     },
     {
-        "comment": "/**\n * Return a new, empty collection.\n * @memberof cy \n * @namespace cy.collection\n */",
+        "comment": "/**\n * Return a new, empty collection.\n * @memberof cy\n * @param_desc Get an empty collection.\n * @namespace cy.collection\n */",
         "meta": {
             "filename": "index.js",
-            "lineno": 78,
+            "lineno": 46,
             "columnno": 2,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
         },
         "description": "Return a new, empty collection.",
         "memberof": "cy",
+        "tags": [
+            {
+                "originalTitle": "param_desc",
+                "title": "param_desc",
+                "text": "Get an empty collection.",
+                "value": "Get an empty collection."
+            }
+        ],
         "kind": "namespace",
         "name": "collection",
         "longname": "cy.collection",
@@ -397,11 +312,11 @@
         "comment": "",
         "meta": {
             "range": [
-                1319,
-                1344
+                1218,
+                1243
             ],
             "filename": "index.js",
-            "lineno": 83,
+            "lineno": 52,
             "columnno": 0,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
@@ -414,169 +329,6 @@
         "undocumented": true,
         "name": "collection",
         "longname": "collection",
-        "kind": "function",
-        "scope": "global",
-        "params": []
-    },
-    {
-        "comment": "/**\n * Get an element from its ID in a very performant way\n * @memberof cy\n * @alias cy.$id\n * @param { ele } x - The ID of the element to get. \n * @namespace cy.getElementById\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 87,
-            "columnno": 2,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "Get an element from its ID in a very performant way",
-        "memberof": "cy",
-        "alias": "cy.$id",
-        "params": [
-            {
-                "type": {
-                    "names": [
-                        "ele"
-                    ]
-                },
-                "description": "The ID of the element to get.",
-                "name": "x"
-            }
-        ],
-        "kind": "namespace",
-        "name": "getElementById",
-        "longname": "cy.getElementById",
-        "scope": "static"
-    },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                1529,
-                1559
-            ],
-            "filename": "index.js",
-            "lineno": 94,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {
-                "id": "astnode100000031",
-                "name": "getElementById",
-                "type": "FunctionDeclaration",
-                "paramnames": [
-                    "x"
-                ]
-            }
-        },
-        "undocumented": true,
-        "name": "getElementById",
-        "longname": "getElementById",
-        "kind": "function",
-        "scope": "global",
-        "params": []
-    },
-    {
-        "comment": "/**\n * Get an element from its ID in a very performant way\n * @memberof cy\n * @param {function():any} callback - A callback within which you can make batch updates to elements.\n * @namespace cy.batch\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 98,
-            "columnno": 2,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "Get an element from its ID in a very performant way",
-        "memberof": "cy",
-        "params": [
-            {
-                "type": {
-                    "names": [
-                        "function"
-                    ]
-                },
-                "description": "A callback within which you can make batch updates to elements.",
-                "name": "callback"
-            }
-        ],
-        "kind": "namespace",
-        "name": "batch",
-        "longname": "cy.batch",
-        "scope": "static"
-    },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                1767,
-                1795
-            ],
-            "filename": "index.js",
-            "lineno": 104,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {
-                "id": "astnode100000035",
-                "name": "batch",
-                "type": "FunctionDeclaration",
-                "paramnames": [
-                    "callback"
-                ]
-            }
-        },
-        "undocumented": true,
-        "name": "batch",
-        "longname": "batch",
-        "kind": "function",
-        "scope": "global",
-        "params": []
-    },
-    {
-        "comment": "/**\n * Attaches the instance to the specified container for visualisation.\n * @memberof cy\n * @param { object } container - A HTML DOM element in which the graph should be rendered.\n * @namespace cy.mount\n */",
-        "meta": {
-            "filename": "index.js",
-            "lineno": 108,
-            "columnno": 2,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {}
-        },
-        "description": "Attaches the instance to the specified container for visualisation.",
-        "memberof": "cy",
-        "params": [
-            {
-                "type": {
-                    "names": [
-                        "object"
-                    ]
-                },
-                "description": "A HTML DOM element in which the graph should be rendered.",
-                "name": "container"
-            }
-        ],
-        "kind": "namespace",
-        "name": "mount",
-        "longname": "cy.mount",
-        "scope": "static"
-    },
-    {
-        "comment": "",
-        "meta": {
-            "range": [
-                2008,
-                2037
-            ],
-            "filename": "index.js",
-            "lineno": 114,
-            "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
-            "code": {
-                "id": "astnode100000039",
-                "name": "mount",
-                "type": "FunctionDeclaration",
-                "paramnames": [
-                    "container"
-                ]
-            }
-        },
-        "undocumented": true,
-        "name": "mount",
-        "longname": "mount",
         "kind": "function",
         "scope": "global",
         "params": []
