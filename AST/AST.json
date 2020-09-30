@@ -420,10 +420,89 @@
         "params": []
     },
     {
-        "comment": "/**\n * @typedef {object} cy_$\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n */",
+        "comment": "/**\n * @callback filter_callback\n * @property {filter_callback_type} function(ele,i,eles) - filter_callback_type\n */",
         "meta": {
             "filename": "index.js",
             "lineno": 73,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "filter_callback",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "filter_callback_type"
+                    ]
+                },
+                "description": "filter_callback_type",
+                "name": "function(ele,i,eles)"
+            }
+        ],
+        "longname": "filter_callback",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * function(ele, i, eles)\n * @typedef {object} filter_callback_type\n * @property {object} ele - The current element under consideration for filtering.\n * @property {object} i - The counter used for iteration over the elements in the graph.\n * @property {object} eles - The collection of elements being filtered\n */",
+        "meta": {
+            "filename": "index.js",
+            "lineno": 78,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "function(ele, i, eles)",
+        "kind": "typedef",
+        "name": "filter_callback_type",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The current element under consideration for filtering.",
+                "name": "ele"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The counter used for iteration over the elements in the graph.",
+                "name": "i"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The collection of elements being filtered",
+                "name": "eles"
+            }
+        ],
+        "longname": "filter_callback_type",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_$\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {object} selector - The selector the elements should match.\n * @property {function(filter_callback):any} filter_callback - The filter function that returns true for elements that should be returned.\n */",
+        "meta": {
+            "filename": "index.js",
+            "lineno": 86,
             "columnno": 0,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
@@ -480,16 +559,25 @@
                 },
                 "description": "The selector the elements should match.",
                 "name": "selector"
+            },
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "The filter function that returns true for elements that should be returned.",
+                "name": "filter_callback"
             }
         ],
         "longname": "cy_$",
         "scope": "global"
     },
     {
-        "comment": "/**\n * Get elements in the graph matching a selector or a filter function.\n * @memberof cy\n * @sub_functions cy.$|cy.elements|cy.nodes|cy.edges|cy.filter\n * @param {...cy_$} x - Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get nodes in the graph matching the specified selector. | Get edges in the graph matching the specified selector. | Get elements in the graph matching the specified selector.\n * @namespace cy.$\n */",
+        "comment": "/**\n * Get elements in the graph matching a selector or a filter function.\n * @memberof cy\n * @sub_functions cy.$|cy.elements|cy.nodes|cy.edges|cy.filter|cy.filter\n * @param {...cy_$} x - Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get nodes in the graph matching the specified selector. | Get edges in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified filter function.\n * @namespace cy.$\n */",
         "meta": {
             "filename": "index.js",
-            "lineno": 82,
+            "lineno": 96,
             "columnno": 2,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
@@ -500,8 +588,8 @@
             {
                 "originalTitle": "sub_functions",
                 "title": "sub_functions",
-                "text": "cy.$|cy.elements|cy.nodes|cy.edges|cy.filter",
-                "value": "cy.$|cy.elements|cy.nodes|cy.edges|cy.filter"
+                "text": "cy.$|cy.elements|cy.nodes|cy.edges|cy.filter|cy.filter",
+                "value": "cy.$|cy.elements|cy.nodes|cy.edges|cy.filter|cy.filter"
             }
         ],
         "params": [
@@ -512,7 +600,7 @@
                     ]
                 },
                 "variable": true,
-                "description": "Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get nodes in the graph matching the specified selector. | Get edges in the graph matching the specified selector. | Get elements in the graph matching the specified selector.",
+                "description": "Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get nodes in the graph matching the specified selector. | Get edges in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified filter function.",
                 "name": "x"
             }
         ],
@@ -525,11 +613,11 @@
         "comment": "",
         "meta": {
             "range": [
-                2457,
-                2474
+                3112,
+                3129
             ],
             "filename": "index.js",
-            "lineno": 89,
+            "lineno": 103,
             "columnno": 0,
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {

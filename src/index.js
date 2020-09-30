@@ -53,16 +53,56 @@ function collection(){
 
 }
 
-//   /**
-//  * Get an element from its ID in a very performant way
-//  * @memberof cy
-//  * @alias cy.$id
-//  * @param { ele } x - The ID of the element to get. 
-//  * @namespace cy.getElementById
-//  */
-// function getElementById(x){
+/**
+ * @typedef {object} cy_getElementById
+ * @property {object} id - The ID of the element to get.
+ */
 
-// }
+
+  /**
+ * Get an element from its ID in a very performant way
+ * @memberof cy
+ * @alias cy.$id
+ * @param {...cy_getElementById} x - Get ID
+ * @namespace cy.getElementById
+ */
+function getElementById(x){
+
+}
+
+/**
+ * @callback filter_callback
+ * @property {filter_callback_type} function(ele,i,eles) - filter_callback_type
+ */
+
+/**
+ * function(ele, i, eles)
+ * @typedef {object} filter_callback_type
+ * @property {object} ele - The current element under consideration for filtering.
+ * @property {object} i - The counter used for iteration over the elements in the graph.
+ * @property {object} eles - The collection of elements being filtered
+ */
+
+/**
+ * @typedef {object} cy_$
+ * @property {object} selector - The selector the elements should match.
+ * @property {object} selector - The selector the elements should match.
+ * @property {object} selector - The selector the elements should match.
+ * @property {object} selector - The selector the elements should match.
+ * @property {object} selector - The selector the elements should match.
+ * @property {function(filter_callback):any} filter_callback - The filter function that returns true for elements that should be returned.
+ */
+
+  /**
+ * Get elements in the graph matching a selector or a filter function.
+ * @memberof cy
+ * @sub_functions cy.$|cy.elements|cy.nodes|cy.edges|cy.filter|cy.filter
+ * @param {...cy_$} x - Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get nodes in the graph matching the specified selector. | Get edges in the graph matching the specified selector. | Get elements in the graph matching the specified selector. | Get elements in the graph matching the specified filter function.
+ * @namespace cy.$
+ */
+function $(x){
+
+}
 
 //   /**
 //  * Get an element from its ID in a very performant way

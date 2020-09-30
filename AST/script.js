@@ -23,14 +23,26 @@ for(var i in words)
         types[words[i].name] = [];
         for(var j in words[i].properties)
         {
-            var val = {};
-            val.name = words[i].properties[j].name;
-            val.descr = words[i].properties[j].description;
-            types[words[i].name].push(val);
+            //defines arguments
+            var args = {};
+
+            if(words[i].properties[j].type.names != 'function')
+            {
+                args.name = words[i].properties[j].name;
+            }
+            else
+            {
+                args.name = types[words[i].properties[j].name][0].name;
+                args.fields = [];
+                args.fields.push(types[types[words[i].properties[j].name][0].descr]);
+            }
+            
+            args.descr = words[i].properties[j].description;
+            types[words[i].name].push(args);
         }
     }
 }
-
+console.log(types);
 for(var i in words)
 {
     var func = {};
@@ -56,7 +68,7 @@ for(var i in words)
                 if( words[i].tags != undefined )
                 {
                     var sub_names = words[i].tags.find(fn => fn.title == "sub_functions")
-                    console.log(sub_names);
+                    
                     if(sub_names != undefined)
                     {
                         var arr = sub_names.value.split("|");
@@ -68,7 +80,7 @@ for(var i in words)
                 temp.descr = descr[j];
 
                 temp.args.push(types[words[i].params[0].type.names[0]][j]);
-                // console.log(temp);
+                // console.log(types[words[i].params[0].type.names[0]][j]);
                 func.formats.push(temp);
             }
         }
@@ -83,10 +95,6 @@ for(var i in words)
         fns.push(func);
     }
 }
-
-var s = "Ajkdhcfhd dddf dih dscc dc  cde";
-var all = s.split(" | ");
-console.log(all[0]);
 
 // save generated file
 fs.writeFile ("new_generated.json", JSON.stringify(fns, null, 4), function(err) {

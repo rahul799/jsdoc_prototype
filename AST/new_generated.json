@@ -136,6 +136,32 @@
                     }
                 ],
                 "descr": "Get elements in the graph matching the specified selector."
+            },
+            {
+                "name": "cy.filter",
+                "args": [
+                    {
+                        "name": "function(ele,i,eles)",
+                        "fields": [
+                            [
+                                {
+                                    "name": "ele",
+                                    "descr": "The current element under consideration for filtering."
+                                },
+                                {
+                                    "name": "i",
+                                    "descr": "The counter used for iteration over the elements in the graph."
+                                },
+                                {
+                                    "name": "eles",
+                                    "descr": "The collection of elements being filtered"
+                                }
+                            ]
+                        ],
+                        "descr": "The filter function that returns true for elements that should be returned."
+                    }
+                ],
+                "descr": "Get elements in the graph matching the specified filter function."
             }
         ]
     }
