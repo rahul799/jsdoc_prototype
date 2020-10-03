@@ -104,22 +104,55 @@ function $(x){
 
 }
 
-//   /**
-//  * Get an element from its ID in a very performant way
-//  * @memberof cy
-//  * @param {function():any} callback - A callback within which you can make batch updates to elements.
-//  * @namespace cy.batch
-//  */
-// function batch(callback){
+/**
+ * @typedef {object} cy_batch
+ * @property {object} function() -  A callback within which you can make batch updates to elements.
+ */
 
-// }
+/**
+ * Allow for manipulation of elements without triggering multiple style calculations or multiple redraws.
+ * @sub_functions cy.batch|cy.startBatch|cy.endBatch
+ * @param {...cy_batch} x - callback | Starts batching manually (useful for asynchronous cases). | Ends batching manually (useful for asynchronous cases).
+ * @namespace cy.batch
+ */
+function batch(x) {
+  
+}
 
-//   /**
-//  * Attaches the instance to the specified container for visualisation.
-//  * @memberof cy
-//  * @param { object } container - A HTML DOM element in which the graph should be rendered.
-//  * @namespace cy.mount
-//  */
-// function mount(container){
+/**
+ * @typedef {object} cy_mount
+ * @property {object} container - A HTML DOM element in which the graph should be rendered.
+ */
 
-// }
+/**
+ * Attaches the instance to the specified container for visualisation.
+ * @param {...cy_mount} x - To mount
+ * @namespace cy.mount
+ */
+function mount(x) {
+  
+}
+
+/**
+ * Remove the instance from its current container.
+ * @namespace cy.unmount
+ */
+function unmount() {
+  
+}
+
+/**
+ * A convenience function to explicitly destroy the instance.
+ * @namespace cy.destroy
+ */
+function destroy() {
+  
+}
+
+/**
+ * Get whether the instance of Cytoscape.js has been destroyed or not.
+ * @namespace cy.destroyed
+ */
+function destroyed() {
+  
+}
