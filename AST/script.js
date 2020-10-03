@@ -11,7 +11,8 @@ for(var i in words)
 {
     delete words[i].meta;
     if(words[i].comment == "")
-    {
+    {   
+        // To remove comment object
         delete words.splice(i,1);
     }
 }
@@ -25,7 +26,8 @@ for(var i in words)
         {
             //defines arguments
             var args = {};
-
+            
+            //checking whether we have a callback function as an argument
             if(words[i].properties[j].type.names != 'function')
             {
                 args.name = words[i].properties[j].name;
@@ -42,7 +44,7 @@ for(var i in words)
         }
     }
 }
-console.log(types);
+// console.log(types);
 for(var i in words)
 {
     var func = {};
@@ -63,6 +65,7 @@ for(var i in words)
             var descr = words[i].params[0].description.split(" | ");
             for( var j in descr)
             {
+                // formats child
                 var temp = {};
 
                 if( words[i].tags != undefined )
@@ -76,20 +79,30 @@ for(var i in words)
                     }
                 }
 
-                temp.args = [];
-                temp.descr = descr[j];
-
-                temp.args.push(types[words[i].params[0].type.names[0]][j]);
+                if( descr[j] != undefined )
+                {
+                    temp.descr = descr[j];
+                } 
+                // console.log(descr[j]);
+                if(types[words[i].params[0].type.names[0]][j] != undefined)
+                {
+                    temp.args = [];
+                    temp.args.push(types[words[i].params[0].type.names[0]][j]);
+                }
                 // console.log(types[words[i].params[0].type.names[0]][j]);
                 func.formats.push(temp);
             }
         }
-        else
+        else if (words[i].tags != undefined)
         {
            var val = words[i].tags.find(fn => fn.title == "param_desc");
            var arr = {};
            arr.descr = val.value;
            func.formats.push(arr);
+        }
+        else
+        {
+            delete func["formats"];
         }
         
         fns.push(func);
