@@ -1,0 +1,861 @@
+[
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                18,
+                50
+            ],
+            "filename": "cy_events.js",
+            "lineno": 3,
+            "columnno": 4,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000003",
+                "name": "cytoscape",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "cytoscape",
+        "longname": "cytoscape",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @namespace cy\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 6,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "namespace",
+        "name": "cy",
+        "longname": "cy",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                83,
+                145
+            ],
+            "filename": "cy_events.js",
+            "lineno": 9,
+            "columnno": 4,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000009",
+                "name": "cy",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "cy",
+        "longname": "cy",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                102,
+                142
+            ],
+            "filename": "cy_events.js",
+            "lineno": 10,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000014",
+                "name": "container",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "container",
+        "longname": "container",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * events [, selector], function(event)\n * @typedef {object} cy_on_callback_type\n * @property {object} event - The event object.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 13,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "events [, selector], function(event)",
+        "kind": "typedef",
+        "name": "cy_on_callback_type",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The event object.",
+                "name": "event"
+            }
+        ],
+        "longname": "cy_on_callback_type",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @callback cy_on_callback\n * @property {cy_on_callback_type} function(event) - cy_on_callback_type\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 19,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_on_callback",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_on_callback_type"
+                    ]
+                },
+                "description": "cy_on_callback_type",
+                "name": "function(event)"
+            }
+        ],
+        "longname": "cy_on_callback",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_events_on\n * @property {object} events - A space separated list of event names.\n * @property {object} selector - A selector to specify elements for which the handler runs.\n * @property {function(cy_on_callback):any} cy_on_callback - The handler function that is called when one of the specified events occurs.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 24,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_events_on",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A space separated list of event names.",
+                "name": "events"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A selector to specify elements for which the handler runs.",
+                "name": "selector"
+            },
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "The handler function that is called when one of the specified events occurs.",
+                "name": "cy_on_callback"
+            }
+        ],
+        "longname": "cy_events_on",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_on\n * @property {cy_events_on} cy_events_on\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 31,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_on",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_events_on"
+                    ]
+                },
+                "name": "cy_events_on"
+            }
+        ],
+        "longname": "cy_on",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Listen to events that occur on the core.\n * @memberof cy\n * @alias cy.bind|cy.listen|cy.addListner\n * @sub_functions cy.on\n * @param {...cy_on} x - Listen to events that bubble up from elements matching the specified node selector:\n * @namespace cy.on\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 36,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Listen to events that occur on the core.",
+        "memberof": "cy",
+        "alias": "cy.bind|cy.listen|cy.addListner",
+        "tags": [
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.on",
+                "value": "cy.on"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_on"
+                    ]
+                },
+                "variable": true,
+                "description": "Listen to events that bubble up from elements matching the specified node selector:",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "on",
+        "longname": "cy.on",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1081,
+                1099
+            ],
+            "filename": "cy_events.js",
+            "lineno": 44,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000020",
+                "name": "on",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "on",
+        "longname": "on",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_promiseOn_events_selector\n * @property {object} events - A space separated list of event names.\n * @property {object} selector - A selector to specify elements for which the handler runs.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 49,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_promiseOn_events_selector",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A space separated list of event names.",
+                "name": "events"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A selector to specify elements for which the handler runs.",
+                "name": "selector"
+            }
+        ],
+        "longname": "cy_promiseOn_events_selector",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_promiseOn\n * @property {cy_promiseOn_events_selector} cy_promiseOn_events_selector\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 55,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_promiseOn",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_promiseOn_events_selector"
+                    ]
+                },
+                "name": "cy_promiseOn_events_selector"
+            }
+        ],
+        "longname": "cy_promiseOn",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @memberof cy\n * @alias cy.pon\n * @sub_functions cy.promiseOn\n * @param {...cy_promiseOn} x - Get a promise that is resolved when the core emits the first of any of the specified events.\n * @namespace cy.promiseOn\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 60,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "memberof": "cy",
+        "alias": "cy.pon",
+        "tags": [
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.promiseOn",
+                "value": "cy.promiseOn"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_promiseOn"
+                    ]
+                },
+                "variable": true,
+                "description": "Get a promise that is resolved when the core emits the first of any of the specified events.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "promiseOn",
+        "longname": "cy.promiseOn",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1665,
+                1690
+            ],
+            "filename": "cy_events.js",
+            "lineno": 67,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000024",
+                "name": "promiseOn",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "promiseOn",
+        "longname": "promiseOn",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * events [, selector], function(event)\n * @typedef {object} cy_one_callback_type\n * @property {object} event - The event object.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 72,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "events [, selector], function(event)",
+        "kind": "typedef",
+        "name": "cy_one_callback_type",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The event object.",
+                "name": "event"
+            }
+        ],
+        "longname": "cy_one_callback_type",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @callback cy_one_callback\n * @property {cy_one_callback_type} function(event) - cy_one_callback_type\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 78,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_one_callback",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_one_callback_type"
+                    ]
+                },
+                "description": "cy_one_callback_type",
+                "name": "function(event)"
+            }
+        ],
+        "longname": "cy_one_callback",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_events_one\n * @property {object} events - A space separated list of event names.\n * @property {object} selector - A selector to specify elements for which the handler runs.\n * @property {function(cy_one_callback):any} cy_one_callback - The handler function that is called when one of the specified events occurs.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 83,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_events_one",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A space separated list of event names.",
+                "name": "events"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A selector to specify elements for which the handler runs.",
+                "name": "selector"
+            },
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "The handler function that is called when one of the specified events occurs.",
+                "name": "cy_one_callback"
+            }
+        ],
+        "longname": "cy_events_one",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_one\n * @property {cy_events_one} cy_events_one\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 90,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_one",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_events_one"
+                    ]
+                },
+                "name": "cy_events_one"
+            }
+        ],
+        "longname": "cy_one",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @memberof cy\n * @sub_functions cy.one\n * @param {...cy_one} x - Listen to events that occur on the core, and run the handler only once.\n * @namespace cy.one\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 95,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "memberof": "cy",
+        "tags": [
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.one",
+                "value": "cy.one"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_one"
+                    ]
+                },
+                "variable": true,
+                "description": "Listen to events that occur on the core, and run the handler only once.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "one",
+        "longname": "cy.one",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2541,
+                2560
+            ],
+            "filename": "cy_events.js",
+            "lineno": 101,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000028",
+                "name": "one",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "one",
+        "longname": "one",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_removeListner_events_selector_handler\n * @property {object} events - A space separated list of event names.\n * @property {object} selector - The same selector used to listen to the events.\n * @property {object} handler - A reference to the handler function to remove.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 105,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_removeListner_events_selector_handler",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A space separated list of event names.",
+                "name": "events"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The same selector used to listen to the events.",
+                "name": "selector"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A reference to the handler function to remove.",
+                "name": "handler"
+            }
+        ],
+        "longname": "cy_removeListner_events_selector_handler",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_removeListner\n * @property {cy_removeListner_events_selector_handler} cy_removeListner_events_selector_handler\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 112,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_removeListner",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_removeListner_events_selector_handler"
+                    ]
+                },
+                "name": "cy_removeListner_events_selector_handler"
+            }
+        ],
+        "longname": "cy_removeListner",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @memberof cy\n * @alias cy.off|cy.unbind|cy.unlisten\n * @sub_functions cy.removeListner\n * @param {...cy_removeListner} x - Remove event handlers on the core.\n * @namespace cy.removeListner\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 117,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "memberof": "cy",
+        "alias": "cy.off|cy.unbind|cy.unlisten",
+        "tags": [
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.removeListner",
+                "value": "cy.removeListner"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_removeListner"
+                    ]
+                },
+                "variable": true,
+                "description": "Remove event handlers on the core.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "removeListner",
+        "longname": "cy.removeListner",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3209,
+                3238
+            ],
+            "filename": "cy_events.js",
+            "lineno": 124,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000032",
+                "name": "removeListner",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "removeListner",
+        "longname": "removeListner",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_removeAllListners\n * @property {object} NULL\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 128,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_removeAllListners",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            }
+        ],
+        "longname": "cy_removeAllListners",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @memberof cy\n * @sub_functions cy.removeAllListners\n * @param {...cy_removeAllListners} x - Remove all event handlers on the core.\n * @namespace cy.removeAllListners\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 133,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "memberof": "cy",
+        "tags": [
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.removeAllListners",
+                "value": "cy.removeAllListners"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_removeAllListners"
+                    ]
+                },
+                "variable": true,
+                "description": "Remove all event handlers on the core.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "removeAllListners",
+        "longname": "cy.removeAllListners",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3497,
+                3530
+            ],
+            "filename": "cy_events.js",
+            "lineno": 139,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000036",
+                "name": "removeAllListners",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "removeAllListners",
+        "longname": "removeAllListners",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/home/rahul/Documents/GSOD/jsdoc_prototype/src/cy_events.js"
+        ]
+    }
+]

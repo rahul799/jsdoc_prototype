@@ -1,0 +1,125 @@
+[
+    {
+        "name": "cy.on",
+        "pureAliases": [
+            "cy.bind",
+            "cy.listen",
+            "cy.addListner"
+        ],
+        "descr": "Listen to events that occur on the core.",
+        "formats": [
+            {
+                "name": "cy.on",
+                "descr": "Listen to events that bubble up from elements matching the specified node selector:",
+                "args": [
+                    {
+                        "name": "events",
+                        "descr": "A space separated list of event names."
+                    },
+                    {
+                        "name": "selector",
+                        "descr": "A selector to specify elements for which the handler runs."
+                    },
+                    {
+                        "name": "function(event)",
+                        "fields": [
+                            {
+                                "name": "event",
+                                "descr": "The event object."
+                            }
+                        ],
+                        "descr": "The handler function that is called when one of the specified events occurs."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "cy.promiseOn",
+        "pureAliases": [
+            "cy.pon"
+        ],
+        "formats": [
+            {
+                "name": "cy.promiseOn",
+                "descr": "Get a promise that is resolved when the core emits the first of any of the specified events.",
+                "args": [
+                    {
+                        "name": "events",
+                        "descr": "A space separated list of event names."
+                    },
+                    {
+                        "name": "selector",
+                        "descr": "A selector to specify elements for which the handler runs."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "cy.one",
+        "formats": [
+            {
+                "name": "cy.one",
+                "descr": "Listen to events that occur on the core, and run the handler only once.",
+                "args": [
+                    {
+                        "name": "events",
+                        "descr": "A space separated list of event names."
+                    },
+                    {
+                        "name": "selector",
+                        "descr": "A selector to specify elements for which the handler runs."
+                    },
+                    {
+                        "name": "function(event)",
+                        "fields": [
+                            {
+                                "name": "event",
+                                "descr": "The event object."
+                            }
+                        ],
+                        "descr": "The handler function that is called when one of the specified events occurs."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "cy.removeListner",
+        "pureAliases": [
+            "cy.off",
+            "cy.unbind",
+            "cy.unlisten"
+        ],
+        "formats": [
+            {
+                "name": "cy.removeListner",
+                "descr": "Remove event handlers on the core.",
+                "args": [
+                    {
+                        "name": "events",
+                        "descr": "A space separated list of event names."
+                    },
+                    {
+                        "name": "selector",
+                        "descr": "The same selector used to listen to the events."
+                    },
+                    {
+                        "name": "handler",
+                        "descr": "A reference to the handler function to remove."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "cy.removeAllListners",
+        "formats": [
+            {
+                "name": "cy.removeAllListners",
+                "descr": "Remove all event handlers on the core."
+            }
+        ]
+    }
+]
