@@ -2,11 +2,17 @@ var fs=require('fs');
 var data=fs.readFileSync('/home/rahul/Documents/GSOD/jsdoc_prototype/AST/cy_data.json', 'utf8');
 var words=JSON.parse(data);
 
+var fns = [];
+
+var candidate = {};
+var types = {};
+
 for(var i in words)
 {
     delete words[i].meta;
     if(words[i].comment == "")
-    {
+    {   
+        // To remove comment object
         delete words.splice(i,1);
     }
 }
@@ -66,6 +72,7 @@ for(var i in words)
             {
                 // formats child
                 var temp = {};
+
 
                 if( words[i].tags != undefined )
                 {
