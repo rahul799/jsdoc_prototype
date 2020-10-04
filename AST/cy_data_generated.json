@@ -25,16 +25,14 @@
                 "name": "cy.data",
                 "descr": "Set a particular data field.",
                 "args": [
-                    [
-                        {
-                            "name": "name",
-                            "descr": "The name of the field to set."
-                        },
-                        {
-                            "name": "value",
-                            "descr": "The value to set for the field."
-                        }
-                    ]
+                    {
+                        "name": "name",
+                        "descr": "The name of the field to set."
+                    },
+                    {
+                        "name": "value",
+                        "descr": "The value to set for the field."
+                    }
                 ]
             },
             {
@@ -44,6 +42,81 @@
                     {
                         "name": "obj",
                         "descr": "The object containing name-value pairs to update data fields."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "cy.removeData",
+        "pureAliases": [
+            "cy.removeAttr"
+        ],
+        "descr": "Remove developer-defined data associated with the elements.",
+        "formats": [
+            {
+                "name": "cy.removeData",
+                "descr": "Removes all mutable data fields for the elements."
+            },
+            {
+                "name": "cy.removeData",
+                "descr": "Removes the specified mutable data fields for the elements.",
+                "args": [
+                    {
+                        "name": "names",
+                        "descr": "A space-separated list of fields to delete."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "cy.scratch",
+        "extFn": "true",
+        "descr": "Set or get scratchpad data, where temporary or non-JSON data can be stored.  App-level scratchpad data should use namespaces prefixed with underscore, like `'_foo'`.  This is analogous to the more common [`ele.scratch()`](#ele.scratch) but for graph global data.",
+        "formats": [
+            {
+                "name": "cy.scratch",
+                "descr": "Get the entire scratchpad object for the core."
+            },
+            {
+                "name": "cy.scratch",
+                "descr": "Get the scratchpad at a particular namespace.",
+                "args": [
+                    {
+                        "name": "namespace",
+                        "descr": "A namespace string."
+                    }
+                ]
+            },
+            {
+                "name": "cy.scratch",
+                "descr": "Set the scratchpad at a particular namespace.",
+                "args": [
+                    {
+                        "name": "name",
+                        "descr": "A namespace string."
+                    },
+                    {
+                        "name": "value",
+                        "descr": "The value to set at the specified namespace."
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "cy.removeScratch",
+        "extFn": "true",
+        "descr": "Remove scratchpad data.  You should remove scratchpad data only at your own namespaces.  This is analogous to the more common [`ele.removeScratch()`](#ele.removeScratch) but for graph global data.",
+        "formats": [
+            {
+                "name": "cy.removeScratch",
+                "descr": "Remove the scratchpad data at a particular namespace.",
+                "args": [
+                    {
+                        "name": "namespace",
+                        "descr": "A namespace string."
                     }
                 ]
             }

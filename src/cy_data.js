@@ -37,3 +37,64 @@ var cy = cytoscape({
 function data(x){
 
 }
+
+/**
+ * @typedef {object} cy_removeData
+ * @property {object} NULL
+ * @property {object} names - A space-separated list of fields to delete.
+ */
+
+  /**
+ * Remove developer-defined data associated with the elements.
+ * @memberof cy
+ * @alias cy.removeAttr
+ * @sub_functions cy.removeData|cy.removeData
+ * @param {...cy_removeData} x - Removes all mutable data fields for the elements. | Removes the specified mutable data fields for the elements.
+ * @namespace cy.removeData
+ */
+function removeData(x){
+
+}
+
+/**
+ *  namespace, value
+ * @typedef {object} cy_scratch_namespace_value
+ * @property {object} name - A namespace string.
+ * @property {object} value - The value to set at the specified namespace.
+ */
+
+/**
+ * @typedef {object} cy_scratch
+ * @property {object} NULL
+ * @property {object} namespace - A namespace string.
+ * @property {cy_scratch_namespace_value} cy_scratch_namespace_value
+ */
+
+  /**
+ * Set or get scratchpad data, where temporary or non-JSON data can be stored.  App-level scratchpad data should use namespaces prefixed with underscore, like `'_foo'`.  This is analogous to the more common [`ele.scratch()`](#ele.scratch) but for graph global data.
+ * @memberof cy
+ * @extFn true
+ * @sub_functions cy.scratch|cy.scratch|cy.scratch
+ * @param {...cy_scratch} x - Get the entire scratchpad object for the core. | Get the scratchpad at a particular namespace. | Set the scratchpad at a particular namespace.
+ * @namespace cy.scratch
+ */
+function scratch(x){
+
+}
+
+/**
+ * @typedef {object} cy_removeScratch
+ * @property {object} namespace - A namespace string.
+ */
+
+/**
+ * Remove scratchpad data.  You should remove scratchpad data only at your own namespaces.  This is analogous to the more common [`ele.removeScratch()`](#ele.removeScratch) but for graph global data.
+ * @memberof cy
+ * @extFn true
+ * @sub_functions cy.removeScratch
+ * @param {...cy_removeScratch} x - Remove the scratchpad data at a particular namespace.
+ * @namespace cy.removeScratch
+ */
+function removeScratch(x){
+
+}

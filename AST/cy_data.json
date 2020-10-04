@@ -9,7 +9,7 @@
             "filename": "cy_data.js",
             "lineno": 3,
             "columnno": 4,
-            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
                 "id": "astnode100000003",
                 "name": "cytoscape",
@@ -30,7 +30,7 @@
             "filename": "cy_data.js",
             "lineno": 6,
             "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
         },
         "kind": "namespace",
@@ -48,7 +48,7 @@
             "filename": "cy_data.js",
             "lineno": 9,
             "columnno": 4,
-            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
                 "id": "astnode100000009",
                 "name": "cy",
@@ -73,7 +73,7 @@
             "filename": "cy_data.js",
             "lineno": 10,
             "columnno": 2,
-            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
                 "id": "astnode100000014",
                 "name": "container",
@@ -93,7 +93,7 @@
             "filename": "cy_data.js",
             "lineno": 13,
             "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
         },
         "description": "name, value",
@@ -133,7 +133,7 @@
             "filename": "cy_data.js",
             "lineno": 20,
             "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
         },
         "kind": "typedef",
@@ -189,7 +189,7 @@
             "filename": "cy_data.js",
             "lineno": 28,
             "columnno": 2,
-            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {}
         },
         "description": "Read and write developer-defined data associated with the graph.",
@@ -236,7 +236,7 @@
             "filename": "cy_data.js",
             "lineno": 37,
             "columnno": 0,
-            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
                 "id": "astnode100000020",
                 "name": "data",
@@ -254,10 +254,366 @@
         "params": []
     },
     {
+        "comment": "/**\n * @typedef {object} cy_removeData\n * @property {object} NULL\n * @property {object} names - A space-separated list of fields to delete.\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 41,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_removeData",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A space-separated list of fields to delete.",
+                "name": "names"
+            }
+        ],
+        "longname": "cy_removeData",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Remove developer-defined data associated with the elements.\n * @memberof cy\n * @alias cy.removeAttr\n * @sub_functions cy.removeData|cy.removeData\n * @param {...cy_removeData} x - Removes all mutable data fields for the elements. | Removes the specified mutable data fields for the elements.\n * @namespace cy.removeData\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 47,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Remove developer-defined data associated with the elements.",
+        "memberof": "cy",
+        "alias": "cy.removeAttr",
+        "tags": [
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.removeData|cy.removeData",
+                "value": "cy.removeData|cy.removeData"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_removeData"
+                    ]
+                },
+                "variable": true,
+                "description": "Removes all mutable data fields for the elements. | Removes the specified mutable data fields for the elements.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "removeData",
+        "longname": "cy.removeData",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1503,
+                1529
+            ],
+            "filename": "cy_data.js",
+            "lineno": 55,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000024",
+                "name": "removeData",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "removeData",
+        "longname": "removeData",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n *  namespace, value\n * @typedef {object} cy_scratch_namespace_value\n * @property {object} name - A namespace string.\n * @property {object} value - The value to set at the specified namespace.\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 59,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "namespace, value",
+        "kind": "typedef",
+        "name": "cy_scratch_namespace_value",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A namespace string.",
+                "name": "name"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The value to set at the specified namespace.",
+                "name": "value"
+            }
+        ],
+        "longname": "cy_scratch_namespace_value",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_scratch\n * @property {object} NULL\n * @property {object} namespace - A namespace string.\n * @property {cy_scratch_namespace_value} cy_scratch_namespace_value\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 66,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_scratch",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A namespace string.",
+                "name": "namespace"
+            },
+            {
+                "type": {
+                    "names": [
+                        "cy_scratch_namespace_value"
+                    ]
+                },
+                "name": "cy_scratch_namespace_value"
+            }
+        ],
+        "longname": "cy_scratch",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Set or get scratchpad data, where temporary or non-JSON data can be stored.  App-level scratchpad data should use namespaces prefixed with underscore, like `'_foo'`.  This is analogous to the more common [`ele.scratch()`](#ele.scratch) but for graph global data.\n * @memberof cy\n * @extFn true\n * @sub_functions cy.scratch|cy.scratch|cy.scratch\n * @param {...cy_scratch} x - Get the entire scratchpad object for the core. | Get the scratchpad at a particular namespace. | Set the scratchpad at a particular namespace.\n * @namespace cy.scratch\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 73,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Set or get scratchpad data, where temporary or non-JSON data can be stored.  App-level scratchpad data should use namespaces prefixed with underscore, like `'_foo'`.  This is analogous to the more common [`ele.scratch()`](#ele.scratch) but for graph global data.",
+        "memberof": "cy",
+        "tags": [
+            {
+                "originalTitle": "extFn",
+                "title": "extfn",
+                "text": "true",
+                "value": "true"
+            },
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.scratch|cy.scratch|cy.scratch",
+                "value": "cy.scratch|cy.scratch|cy.scratch"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_scratch"
+                    ]
+                },
+                "variable": true,
+                "description": "Get the entire scratchpad object for the core. | Get the scratchpad at a particular namespace. | Set the scratchpad at a particular namespace.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "scratch",
+        "longname": "cy.scratch",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2480,
+                2503
+            ],
+            "filename": "cy_data.js",
+            "lineno": 81,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000028",
+                "name": "scratch",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "scratch",
+        "longname": "scratch",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_removeScratch\n * @property {object} namespace - A namespace string.\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 85,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_removeScratch",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A namespace string.",
+                "name": "namespace"
+            }
+        ],
+        "longname": "cy_removeScratch",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Remove scratchpad data.  You should remove scratchpad data only at your own namespaces.  This is analogous to the more common [`ele.removeScratch()`](#ele.removeScratch) but for graph global data.\n * @memberof cy\n * @extFn true\n * @sub_functions cy.removeScratch\n * @param {...cy_removeScratch} x - Remove the scratchpad data at a particular namespace.\n * @namespace cy.removeScratch\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 90,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Remove scratchpad data.  You should remove scratchpad data only at your own namespaces.  This is analogous to the more common [`ele.removeScratch()`](#ele.removeScratch) but for graph global data.",
+        "memberof": "cy",
+        "tags": [
+            {
+                "originalTitle": "extFn",
+                "title": "extfn",
+                "text": "true",
+                "value": "true"
+            },
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.removeScratch",
+                "value": "cy.removeScratch"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_removeScratch"
+                    ]
+                },
+                "variable": true,
+                "description": "Remove the scratchpad data at a particular namespace.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "removeScratch",
+        "longname": "cy.removeScratch",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3001,
+                3030
+            ],
+            "filename": "cy_data.js",
+            "lineno": 98,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000032",
+                "name": "removeScratch",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "removeScratch",
+        "longname": "removeScratch",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
         "kind": "package",
         "longname": "package:undefined",
         "files": [
-            "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src/cy_data.js"
+            "/home/rahul/Documents/GSOD/jsdoc_prototype/src/cy_data.js"
         ]
     }
 ]

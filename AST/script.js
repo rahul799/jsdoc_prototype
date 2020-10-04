@@ -1,10 +1,10 @@
 var fs=require('fs');
-var data=fs.readFileSync('/home/rahul/Documents/GSOD/jsdoc_prototype/AST/AST.json', 'utf8');
+var data=fs.readFileSync('/home/rahul/Documents/GSOD/jsdoc_prototype/AST/cy_data.json', 'utf8');
 var words=JSON.parse(data);
 
 var fns = [];
 
-var candidate = {};
+
 var types = {};
 
 for(var i in words)
@@ -56,9 +56,16 @@ for(var i in words)
             func.pureAliases = words[i].alias.split("|");
         }
 
+        // checking for formatSameFn
         if(words[i].tags != undefined && words[i].tags.find(fn => fn.originalTitle == "formatsSameFn") != undefined)
         {
             func.formatsSameFn = words[i].tags.find(fn => fn.originalTitle == "formatsSameFn").value;
+        }
+
+        // checking for extFn
+        if(words[i].tags != undefined && words[i].tags.find(fn => fn.originalTitle == "extFn") != undefined)
+        {
+            func.extFn = words[i].tags.find(fn => fn.originalTitle == "extFn").value;
         }
 
         func.descr = words[i].description;
@@ -97,7 +104,7 @@ for(var i in words)
                         // Check for multiple arguments
                         if( types[types[words[i].params[0].type.names[0]][j].name] != undefined )
                         {
-                            temp.args.push(types[types[words[i].params[0].type.names[0]][j].name]);
+                            temp.args = types[types[words[i].params[0].type.names[0]][j].name];
                         }
                         else
                         {
@@ -126,7 +133,7 @@ for(var i in words)
 }
 
 // save generated file
-fs.writeFile ("new_generated.json", JSON.stringify(fns, null, 4), function(err) {
+fs.writeFile ("cy_data_generated.json", JSON.stringify(fns, null, 4), function(err) {
     if (err) throw err;
     console.log('complete');
 });
