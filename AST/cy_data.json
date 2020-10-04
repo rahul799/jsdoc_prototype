@@ -1,0 +1,263 @@
+[
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                18,
+                50
+            ],
+            "filename": "cy_data.js",
+            "lineno": 3,
+            "columnno": 4,
+            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000003",
+                "name": "cytoscape",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "cytoscape",
+        "longname": "cytoscape",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @namespace cy\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 6,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "namespace",
+        "name": "cy",
+        "longname": "cy",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                83,
+                145
+            ],
+            "filename": "cy_data.js",
+            "lineno": 9,
+            "columnno": 4,
+            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000009",
+                "name": "cy",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "cy",
+        "longname": "cy",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                102,
+                142
+            ],
+            "filename": "cy_data.js",
+            "lineno": 10,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000014",
+                "name": "container",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "container",
+        "longname": "container",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n *  name, value\n * @typedef {object} cy_data_name_val\n * @property {object} name - The name of the field to set.\n * @property {object} value -  The value to set for the field.\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 13,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "name, value",
+        "kind": "typedef",
+        "name": "cy_data_name_val",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The name of the field to set.",
+                "name": "name"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The value to set for the field.",
+                "name": "value"
+            }
+        ],
+        "longname": "cy_data_name_val",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_data\n * @property {object} NULL\n * @property {object} name - The name of the field to get.\n * @property {cy_data_name_val} cy_data_name_val - Set a particular data field.\n * @property {object} obj - The object containing name-value pairs to update data fields.\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 20,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_data",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The name of the field to get.",
+                "name": "name"
+            },
+            {
+                "type": {
+                    "names": [
+                        "cy_data_name_val"
+                    ]
+                },
+                "description": "Set a particular data field.",
+                "name": "cy_data_name_val"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The object containing name-value pairs to update data fields.",
+                "name": "obj"
+            }
+        ],
+        "longname": "cy_data",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Read and write developer-defined data associated with the graph.\n * @memberof cy\n * @alias cy.attr\n * @formatsSameFn true\n * @sub_functions cy.data|cy.data|cy.data|cy.data\n * @param {...cy_data} x - Get the entire data object. | Get a particular data field. | Set a particular data field. | Update multiple data fields at once via an object.\n * @namespace cy.data\n */",
+        "meta": {
+            "filename": "cy_data.js",
+            "lineno": 28,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Read and write developer-defined data associated with the graph.",
+        "memberof": "cy",
+        "alias": "cy.attr",
+        "tags": [
+            {
+                "originalTitle": "formatsSameFn",
+                "title": "formatssamefn",
+                "text": "true",
+                "value": "true"
+            },
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.data|cy.data|cy.data|cy.data",
+                "value": "cy.data|cy.data|cy.data|cy.data"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_data"
+                    ]
+                },
+                "variable": true,
+                "description": "Get the entire data object. | Get a particular data field. | Set a particular data field. | Update multiple data fields at once via an object.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "data",
+        "longname": "cy.data",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1004,
+                1024
+            ],
+            "filename": "cy_data.js",
+            "lineno": 37,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000020",
+                "name": "data",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "data",
+        "longname": "data",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/home/rahul/Documents/GSOD/new/jsdoc_prototype/src/cy_data.js"
+        ]
+    }
+]
