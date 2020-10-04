@@ -160,14 +160,38 @@
         "memberof": "cy",
         "params": [
             {
-                "type": {
-                    "names": [
-                        "ele",
-                        "eles"
-                    ]
-                },
-                "description": "A plain object that specifies the element or A collection of elements.",
-                "name": "x"
+                "name": "cy.filter",
+                "descr": "Get elements in the graph matching the specified selector.",
+                "args": [
+                    {
+                        "name": "selector",
+                        "descr": "The selector the elements should match."
+                    }
+                ]
+            },
+            {
+                "name": "cy.filter",
+                "descr": "Get elements in the graph matching the specified filter function.",
+                "args": [
+                    {
+                        "name": "function(ele,i,eles)",
+                        "fields": [
+                            {
+                                "name": "ele",
+                                "descr": "The current element under consideration for filtering."
+                            },
+                            {
+                                "name": "i",
+                                "descr": "The counter used for iteration over the elements in the graph."
+                            },
+                            {
+                                "name": "eles",
+                                "descr": "The collection of elements being filtered"
+                            }
+                        ],
+                        "descr": "The filter function that returns true for elements that should be returned."
+                    }
+                ]
             }
         ],
         "kind": "namespace",
