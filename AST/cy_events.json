@@ -761,7 +761,7 @@
         "params": []
     },
     {
-        "comment": "/**\n * @typedef {object} cy_removeAllListners\n * @property {object} NULL\n */",
+        "comment": "/**\n * @typedef {object} cy_removeAllListner\n * @property {object} NULL\n */",
         "meta": {
             "filename": "cy_events.js",
             "lineno": 128,
@@ -770,7 +770,7 @@
             "code": {}
         },
         "kind": "typedef",
-        "name": "cy_removeAllListners",
+        "name": "cy_removeAllListner",
         "type": {
             "names": [
                 "object"
@@ -786,11 +786,11 @@
                 "name": "NULL"
             }
         ],
-        "longname": "cy_removeAllListners",
+        "longname": "cy_removeAllListner",
         "scope": "global"
     },
     {
-        "comment": "/**\n * @memberof cy\n * @sub_functions cy.removeAllListners\n * @param {...cy_removeAllListners} x - Remove all event handlers on the core.\n * @namespace cy.removeAllListners\n */",
+        "comment": "/**\n * @memberof cy\n * @sub_functions cy.removeAllListner\n * @param {...cy_removeAllListner} x - Remove all event handlers on the core.\n * @namespace cy.removeAllListner\n */",
         "meta": {
             "filename": "cy_events.js",
             "lineno": 133,
@@ -803,15 +803,15 @@
             {
                 "originalTitle": "sub_functions",
                 "title": "sub_functions",
-                "text": "cy.removeAllListners",
-                "value": "cy.removeAllListners"
+                "text": "cy.removeAllListner",
+                "value": "cy.removeAllListner"
             }
         ],
         "params": [
             {
                 "type": {
                     "names": [
-                        "cy_removeAllListners"
+                        "cy_removeAllListner"
                     ]
                 },
                 "variable": true,
@@ -820,16 +820,16 @@
             }
         ],
         "kind": "namespace",
-        "name": "removeAllListners",
-        "longname": "cy.removeAllListners",
+        "name": "removeAllListner",
+        "longname": "cy.removeAllListner",
         "scope": "static"
     },
     {
         "comment": "",
         "meta": {
             "range": [
-                3497,
-                3530
+                3493,
+                3525
             ],
             "filename": "cy_events.js",
             "lineno": 139,
@@ -837,7 +837,7 @@
             "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
             "code": {
                 "id": "astnode100000036",
-                "name": "removeAllListners",
+                "name": "removeAllListner",
                 "type": "FunctionDeclaration",
                 "paramnames": [
                     "x"
@@ -845,8 +845,354 @@
             }
         },
         "undocumented": true,
-        "name": "removeAllListners",
-        "longname": "removeAllListners",
+        "name": "removeAllListner",
+        "longname": "removeAllListner",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * Remove all event handlers on the core.\n * @namespace cy.removeAllListeners\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 143,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Remove all event handlers on the core.",
+        "kind": "namespace",
+        "name": "removeAllListeners",
+        "memberof": "cy",
+        "longname": "cy.removeAllListeners",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3613,
+                3649
+            ],
+            "filename": "cy_events.js",
+            "lineno": 147,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000040",
+                "name": "removeAllListeners",
+                "type": "FunctionDeclaration",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "removeAllListeners",
+        "longname": "removeAllListeners",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_emit_events_extraParams\n * @property {object} events - A list of event names to emit (either a space-separated string or an array)\n * @property {object} extraParams - An array of additional parameters to pass to the handler.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 151,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_emit_events_extraParams",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A list of event names to emit (either a space-separated string or an array)",
+                "name": "events"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "An array of additional parameters to pass to the handler.",
+                "name": "extraParams"
+            }
+        ],
+        "longname": "cy_emit_events_extraParams",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_emit\n * @property {cy_emit_events_extraParams} cy_emit_events_extraParams\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 157,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_emit",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_emit_events_extraParams"
+                    ]
+                },
+                "name": "cy_emit_events_extraParams"
+            }
+        ],
+        "longname": "cy_emit",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @memberof cy\n * @alias cy.trigger\n * @sub_functions cy.emit\n * @param {...cy_emit} x - Emit one or more events.\n * @namespace cy.emit\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 162,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "memberof": "cy",
+        "alias": "cy.trigger",
+        "tags": [
+            {
+                "originalTitle": "sub_functions",
+                "title": "sub_functions",
+                "text": "cy.emit",
+                "value": "cy.emit"
+            }
+        ],
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_emit"
+                    ]
+                },
+                "variable": true,
+                "description": "Emit one or more events.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "emit",
+        "longname": "cy.emit",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4163,
+                4183
+            ],
+            "filename": "cy_events.js",
+            "lineno": 169,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000043",
+                "name": "emit",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "emit",
+        "longname": "emit",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * events [, selector], function(event)\n * @typedef {object} cy_ready_callback_type\n * @property {object} event - The `ready` event.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 173,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "events [, selector], function(event)",
+        "kind": "typedef",
+        "name": "cy_ready_callback_type",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The `ready` event.",
+                "name": "event"
+            }
+        ],
+        "longname": "cy_ready_callback_type",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @callback cy_ready_callback\n * @property {cy_ready_callback_type} function(event) - cy_ready_callback_type\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 179,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_ready_callback",
+        "type": {
+            "names": [
+                "function"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_ready_callback_type"
+                    ]
+                },
+                "description": "cy_ready_callback_type",
+                "name": "function(event)"
+            }
+        ],
+        "longname": "cy_ready_callback",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_events_ready\n * @property {function(cy_ready_callback):any} cy_ready_callback - The callback run as soon as the graph is ready.\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 184,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_events_ready",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "The callback run as soon as the graph is ready.",
+                "name": "cy_ready_callback"
+            }
+        ],
+        "longname": "cy_events_ready",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_ready\n * @property {cy_events_ready} cy_events_ready\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 189,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_ready",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_events_ready"
+                    ]
+                },
+                "name": "cy_events_ready"
+            }
+        ],
+        "longname": "cy_ready",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @memberof cy\n * @param {...cy_ready} x - Run a callback as soon as the graph becomes ready (i.e. intitial data loaded and initial layout completed).  If the graph is already ready, then the callback is called immediately.  If data is loaded synchronously and the layout used is discrete/synchronous/unanimated/unspecified, then you don't need `cy.ready()`.\n * @namespace cy.ready\n */",
+        "meta": {
+            "filename": "cy_events.js",
+            "lineno": 194,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_ready"
+                    ]
+                },
+                "variable": true,
+                "description": "Run a callback as soon as the graph becomes ready (i.e. intitial data loaded and initial layout completed).  If the graph is already ready, then the callback is called immediately.  If data is loaded synchronously and the layout used is discrete/synchronous/unanimated/unspecified, then you don't need `cy.ready()`.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "ready",
+        "longname": "cy.ready",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5086,
+                5107
+            ],
+            "filename": "cy_events.js",
+            "lineno": 199,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000047",
+                "name": "ready",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "ready",
+        "longname": "ready",
         "kind": "function",
         "scope": "global",
         "params": []

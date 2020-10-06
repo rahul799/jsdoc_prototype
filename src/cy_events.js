@@ -126,16 +126,76 @@ function removeListner(x){
 }
 
 /**
- * @typedef {object} cy_removeAllListners
+ * @typedef {object} cy_removeAllListner
  * @property {object} NULL
  */
 
   /**
  * @memberof cy
- * @sub_functions cy.removeAllListners
- * @param {...cy_removeAllListners} x - Remove all event handlers on the core.
- * @namespace cy.removeAllListners
+ * @sub_functions cy.removeAllListner
+ * @param {...cy_removeAllListner} x - Remove all event handlers on the core.
+ * @namespace cy.removeAllListner
  */
-function removeAllListners(x){
+function removeAllListner(x){
+
+}
+
+/**
+ * Remove all event handlers on the core.
+ * @namespace cy.removeAllListeners
+ */
+function removeAllListeners() {
+  
+}
+
+/**
+ * @typedef {object} cy_emit_events_extraParams
+ * @property {object} events - A list of event names to emit (either a space-separated string or an array)
+ * @property {object} extraParams - An array of additional parameters to pass to the handler.
+ */
+
+/**
+ * @typedef {object} cy_emit
+ * @property {cy_emit_events_extraParams} cy_emit_events_extraParams
+ */
+
+  /**
+ * @memberof cy
+ * @alias cy.trigger
+ * @sub_functions cy.emit
+ * @param {...cy_emit} x - Emit one or more events.
+ * @namespace cy.emit
+ */
+function emit(x){
+
+}
+
+/**
+ * events [, selector], function(event)
+ * @typedef {object} cy_ready_callback_type
+ * @property {object} event - The `ready` event.
+ */
+
+/**
+ * @callback cy_ready_callback
+ * @property {cy_ready_callback_type} function(event) - cy_ready_callback_type
+ */
+
+/**
+ * @typedef {object} cy_events_ready
+ * @property {function(cy_ready_callback):any} cy_ready_callback - The callback run as soon as the graph is ready.
+ */
+
+/**
+ * @typedef {object} cy_ready
+ * @property {cy_events_ready} cy_events_ready
+ */
+
+  /**
+ * @memberof cy
+ * @param {...cy_ready} x - Run a callback as soon as the graph becomes ready (i.e. intitial data loaded and initial layout completed).  If the graph is already ready, then the callback is called immediately.  If data is loaded synchronously and the layout used is discrete/synchronous/unanimated/unspecified, then you don't need `cy.ready()`.
+ * @namespace cy.ready
+ */
+function ready(x){
 
 }
