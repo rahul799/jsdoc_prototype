@@ -1,0 +1,1895 @@
+[
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                18,
+                50
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 3,
+            "columnno": 4,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000003",
+                "name": "cytoscape",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "cytoscape",
+        "longname": "cytoscape",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @namespace cy\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 6,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "namespace",
+        "name": "cy",
+        "longname": "cy",
+        "scope": "global"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                83,
+                145
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 9,
+            "columnno": 4,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000009",
+                "name": "cy",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "cy",
+        "longname": "cy",
+        "kind": "member",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                102,
+                142
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 10,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000014",
+                "name": "container",
+                "type": "CallExpression",
+                "value": ""
+            }
+        },
+        "undocumented": true,
+        "name": "container",
+        "longname": "container",
+        "kind": "member",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get the HTML DOM element in which the graph is visualised. A null value is returned if the instance is headless.\n * @memberof cy\n * @namespace cy.container\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 13,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get the HTML DOM element in which the graph is visualised. A null value is returned if the instance is headless.",
+        "memberof": "cy",
+        "kind": "namespace",
+        "name": "container",
+        "longname": "cy.container",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                315,
+                339
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 18,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000020",
+                "name": "container",
+                "type": "FunctionDeclaration",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "container",
+        "longname": "container",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_center\n * @property {object} NULL\n * @property {object} eles - The collection to centre upon.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 22,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_center",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The collection to centre upon.",
+                "name": "eles"
+            }
+        ],
+        "longname": "cy_center",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Pan the graph to the centre of a collection.\n * @memberof cy_center\n * @alias cy.centre\n * @param {...cy_center} x - Centre on all elements in the graph. | Centre on the specified elements.\n * @namespace cy.center\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 28,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Pan the graph to the centre of a collection.",
+        "memberof": "cy",
+        "alias": "cy.centre",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_center"
+                    ]
+                },
+                "variable": true,
+                "description": "Centre on all elements in the graph. | Centre on the specified elements.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "center",
+        "longname": "cy.center",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                695,
+                717
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 35,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000023",
+                "name": "center",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "center",
+        "longname": "center",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n *  eles, padding\n * @typedef {object} cy_fit_eles_padding\n * @property {object} eles - The collection to fit to.\n * @property {object} padding -  An amount of padding (in rendered pixels) to have around the graph (default 0).\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 39,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "eles, padding",
+        "kind": "typedef",
+        "name": "cy_fit_eles_padding",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The collection to fit to.",
+                "name": "eles"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "An amount of padding (in rendered pixels) to have around the graph (default 0).",
+                "name": "padding"
+            }
+        ],
+        "longname": "cy_fit_eles_padding",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_fit\n * @property {object} NULL\n * @property {cy_fit_eles_padding} cy_fit_eles_padding\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 46,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_fit",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "cy_fit_eles_padding"
+                    ]
+                },
+                "name": "cy_fit_eles_padding"
+            }
+        ],
+        "longname": "cy_fit",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Pan and zooms the graph to fit to a collection.\n * @memberof cy\n * @param {...cy_fit} x - Fit to all elements in the graph. | Fit to the specified elements.\n * @namespace cy.fit\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 52,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Pan and zooms the graph to fit to a collection.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_fit"
+                    ]
+                },
+                "variable": true,
+                "description": "Fit to all elements in the graph. | Fit to the specified elements.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "fit",
+        "longname": "cy.fit",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1265,
+                1284
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 58,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000027",
+                "name": "fit",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "fit",
+        "longname": "fit",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * Reset the graph to the default zoom level and panning position.\n * @memberof cy\n * @namespace cy.reset\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 62,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Reset the graph to the default zoom level and panning position.",
+        "memberof": "cy",
+        "kind": "namespace",
+        "name": "reset",
+        "longname": "cy.reset",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1400,
+                1420
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 67,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000031",
+                "name": "reset",
+                "type": "FunctionDeclaration",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "reset",
+        "longname": "reset",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_pan\n * @property {object} NULL\n * @property {object} renderedPosition - The rendered position to pan the graph to.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 71,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_pan",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The rendered position to pan the graph to.",
+                "name": "renderedPosition"
+            }
+        ],
+        "longname": "cy_pan",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set the panning position of the graph.\n * @memberof cy\n * @param {...cy_pan} x - Get the current panning position. | Set the current panning position.\n * @namespace cy.pan\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 77,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set the panning position of the graph.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_pan"
+                    ]
+                },
+                "variable": true,
+                "description": "Get the current panning position. | Set the current panning position.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "pan",
+        "longname": "cy.pan",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                1762,
+                1781
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 83,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000034",
+                "name": "pan",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "pan",
+        "longname": "pan",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_panBy\n * @property {object} renderedPosition - The rendered position vector to pan the graph by.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 87,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_panBy",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The rendered position vector to pan the graph by.",
+                "name": "renderedPosition"
+            }
+        ],
+        "longname": "cy_panBy",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Relatively pan the graph by a specified rendered position vector.\n * @memberof cy\n * @param {...cy_panBy} x - The rendered position\n * @namespace cy.panBy\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 92,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Relatively pan the graph by a specified rendered position vector.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_panBy"
+                    ]
+                },
+                "variable": true,
+                "description": "The rendered position",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "panBy",
+        "longname": "cy.panBy",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2081,
+                2102
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 98,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000038",
+                "name": "panBy",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "panBy",
+        "longname": "panBy",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_panningEnabled\n * @property {object} NULL\n * @property {object} bool - A truthy value enables panning; a falsey value disables it.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 102,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_panningEnabled",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A truthy value enables panning; a falsey value disables it.",
+                "name": "bool"
+            }
+        ],
+        "longname": "cy_panningEnabled",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set whether panning is enabled.\n * @memberof cy\n * @param {...cy_panningEnabled} x - Get whether panning is enabled. | Set whether panning is enabled\n * @namespace cy.panningEnabled\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 108,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set whether panning is enabled.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_panningEnabled"
+                    ]
+                },
+                "variable": true,
+                "description": "Get whether panning is enabled. | Set whether panning is enabled",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "panningEnabled",
+        "longname": "cy.panningEnabled",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2470,
+                2500
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 114,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000042",
+                "name": "panningEnabled",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "panningEnabled",
+        "longname": "panningEnabled",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_userPanningEnabled\n * @property {object} NULL\n * @property {object} bool - A truthy value enables panning; a falsey value disables it.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 118,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_userPanningEnabled",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A truthy value enables panning; a falsey value disables it.",
+                "name": "bool"
+            }
+        ],
+        "longname": "cy_userPanningEnabled",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set whether panning by user events (e.g. dragging the graph background) is enabled.\n * @memberof cy\n * @param {...cy_userPanningEnabled} x - Get whether panning is enabled. | Set whether panning is enabled\n * @namespace cy.userPanningEnabled\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 124,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set whether panning by user events (e.g. dragging the graph background) is enabled.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_userPanningEnabled"
+                    ]
+                },
+                "variable": true,
+                "description": "Get whether panning is enabled. | Set whether panning is enabled",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "userPanningEnabled",
+        "longname": "cy.userPanningEnabled",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                2932,
+                2966
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 130,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000046",
+                "name": "userPanningEnabled",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "userPanningEnabled",
+        "longname": "userPanningEnabled",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_zoomingEnabled\n * @property {object} NULL\n * @property {object} bool - A truthy value enables zooming; a falsey value disables it.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 134,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_zoomingEnabled",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A truthy value enables zooming; a falsey value disables it.",
+                "name": "bool"
+            }
+        ],
+        "longname": "cy_zoomingEnabled",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set whether zooming is enabled.\n * @memberof cy\n * @param {...cy_zoomingEnabled} x - Get whether zooming is enabled. | Set whether zooming is enabled\n * @namespace cy.zoomingEnabled\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 140,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set whether zooming is enabled.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_zoomingEnabled"
+                    ]
+                },
+                "variable": true,
+                "description": "Get whether zooming is enabled. | Set whether zooming is enabled",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "zoomingEnabled",
+        "longname": "cy.zoomingEnabled",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3334,
+                3364
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 146,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000050",
+                "name": "zoomingEnabled",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "zoomingEnabled",
+        "longname": "zoomingEnabled",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_userZoomingEnabled\n * @property {object} NULL\n * @property {object} bool - A truthy value enables user zooming; a falsey value disables it.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 150,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_userZoomingEnabled",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A truthy value enables user zooming; a falsey value disables it.",
+                "name": "bool"
+            }
+        ],
+        "longname": "cy_userZoomingEnabled",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set whether user zooming by user events (e.g. mouse wheel, pinch-to-zoom) is enabled.\n * @memberof cy\n * @param {...cy_userZoomingEnabled} x - Get whether user zooming is enabled. | Set whether zooming is enabled\n * @namespace cy.userZoomingEnabled\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 156,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set whether user zooming by user events (e.g. mouse wheel, pinch-to-zoom) is enabled.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_userZoomingEnabled"
+                    ]
+                },
+                "variable": true,
+                "description": "Get whether user zooming is enabled. | Set whether zooming is enabled",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "userZoomingEnabled",
+        "longname": "cy.userZoomingEnabled",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                3808,
+                3842
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 162,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000054",
+                "name": "userZoomingEnabled",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "userZoomingEnabled",
+        "longname": "userZoomingEnabled",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_minZoom\n * @property {object} NULL\n * @property {object} zoom - The new minimum zoom level to use.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 166,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_minZoom",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The new minimum zoom level to use.",
+                "name": "zoom"
+            }
+        ],
+        "longname": "cy_minZoom",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set the minimum zoom level.\n * @memberof cy\n * @param {...cy_minZoom} x - Get the minimum zoom level. | Set the minimum zoom level.\n * @namespace cy.minZoom\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 172,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set the minimum zoom level.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_minZoom"
+                    ]
+                },
+                "variable": true,
+                "description": "Get the minimum zoom level. | Set the minimum zoom level.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "minZoom",
+        "longname": "cy.minZoom",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4153,
+                4176
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 178,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000058",
+                "name": "minZoom",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "minZoom",
+        "longname": "minZoom",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_maxZoom\n * @property {object} NULL\n * @property {object} zoom - The new maximum zoom level to use.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 182,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_maxZoom",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The new maximum zoom level to use.",
+                "name": "zoom"
+            }
+        ],
+        "longname": "cy_maxZoom",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set the maximum zoom level.\n * @memberof cy\n * @param {...cy_maxZoom} x - Get the maximum zoom level. | Set the maximum zoom level.\n * @namespace cy.maxZoom\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 188,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set the maximum zoom level.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_maxZoom"
+                    ]
+                },
+                "variable": true,
+                "description": "Get the maximum zoom level. | Set the maximum zoom level.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "maxZoom",
+        "longname": "cy.maxZoom",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4487,
+                4510
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 194,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000062",
+                "name": "maxZoom",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "maxZoom",
+        "longname": "maxZoom",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n *  zoom, pan\n * @typedef {object} cy_viewport_zoom_pan\n * @property {object} zoom - The zoom level to set.\n * @property {object} pan - The pan to set (a rendered position).\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 198,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "zoom, pan",
+        "kind": "typedef",
+        "name": "cy_viewport_zoom_pan",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The zoom level to set.",
+                "name": "zoom"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The pan to set (a rendered position).",
+                "name": "pan"
+            }
+        ],
+        "longname": "cy_viewport_zoom_pan",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_viewport\n * @property {cy_viewport_zoom_pan} cy_viewport_zoom_pan\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 205,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_viewport",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "cy_viewport_zoom_pan"
+                    ]
+                },
+                "name": "cy_viewport_zoom_pan"
+            }
+        ],
+        "longname": "cy_viewport",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Set the viewport state (pan & zoom) in one call.\n * @memberof cy\n * @param {...cy_viewport} x - Set viewport\n * @namespace cy.viewport\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 210,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Set the viewport state (pan & zoom) in one call.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_viewport"
+                    ]
+                },
+                "variable": true,
+                "description": "Set viewport",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "viewport",
+        "longname": "cy.viewport",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                4942,
+                4966
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 216,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000066",
+                "name": "viewport",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "viewport",
+        "longname": "viewport",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_boxSelectionEnabled\n * @property {object} NULL\n * @property {object} bool - A truthy value enables box selection; a falsey value disables it.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 220,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_boxSelectionEnabled",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A truthy value enables box selection; a falsey value disables it.",
+                "name": "bool"
+            }
+        ],
+        "longname": "cy_boxSelectionEnabled",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set whether box selection is enabled. If enabled along with panning, the user must hold down one of shift, control, alt, or command to initiate box selection.\n * @memberof cy\n * @param {...cy_boxSelectionEnabled} x - Get whether box selection is enabled. | Set whether box selection is enabled.\n * @namespace cy.boxSelectionEnabled\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 226,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set whether box selection is enabled. If enabled along with panning, the user must hold down one of shift, control, alt, or command to initiate box selection.",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_boxSelectionEnabled"
+                    ]
+                },
+                "variable": true,
+                "description": "Get whether box selection is enabled. | Set whether box selection is enabled.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "boxSelectionEnabled",
+        "longname": "cy.boxSelectionEnabled",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                5495,
+                5530
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 232,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000070",
+                "name": "boxSelectionEnabled",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "boxSelectionEnabled",
+        "longname": "boxSelectionEnabled",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_selectionType\n * @property {object} NULL\n * @property {object} type - The selection type string; one of `'single'` (default) or `'additive'`.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 236,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_selectionType",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "The selection type string; one of `'single'` (default) or `'additive'`.",
+                "name": "type"
+            }
+        ],
+        "longname": "cy_selectionType",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set the selection type.  The `'single'` selection type is the default, tapping an element selects that element and deselects the previous elements.  The `'additive' selection type toggles the selection state of an element when tapped.`\n * @memberof cy\n * @param {...cy_selectionType} x - Get the selection type string. | Set the selection type.\n * @namespace cy.selectionType\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 242,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set the selection type.  The `'single'` selection type is the default, tapping an element selects that element and deselects the previous elements.  The `'additive' selection type toggles the selection state of an element when tapped.`",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_selectionType"
+                    ]
+                },
+                "variable": true,
+                "description": "Get the selection type string. | Set the selection type.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "selectionType",
+        "longname": "cy.selectionType",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6103,
+                6132
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 248,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000074",
+                "name": "selectionType",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "selectionType",
+        "longname": "selectionType",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * Get the on-screen width of the viewport in pixels.\n * @memberof cy\n * @namespace cy.width\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 252,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get the on-screen width of the viewport in pixels.",
+        "memberof": "cy",
+        "kind": "namespace",
+        "name": "width",
+        "longname": "cy.width",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6235,
+                6255
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 257,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000078",
+                "name": "width",
+                "type": "FunctionDeclaration",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "width",
+        "longname": "width",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * Get the on-screen height of the viewport in pixels.\n * @memberof cy\n * @namespace cy.height\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 261,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get the on-screen height of the viewport in pixels.",
+        "memberof": "cy",
+        "kind": "namespace",
+        "name": "height",
+        "longname": "cy.height",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6360,
+                6381
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 266,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000081",
+                "name": "height",
+                "type": "FunctionDeclaration",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "height",
+        "longname": "height",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * Get the extent of the viewport, a bounding box in model co-ordinates that lets you know what model positions are visible in the viewport.\n * @memberof cy\n * @namespace cy.extent\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 270,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get the extent of the viewport, a bounding box in model co-ordinates that lets you know what model positions are visible in the viewport.",
+        "memberof": "cy",
+        "kind": "namespace",
+        "name": "extent",
+        "longname": "cy.extent",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                6572,
+                6593
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 275,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000084",
+                "name": "extent",
+                "type": "FunctionDeclaration",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "extent",
+        "longname": "extent",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_autolock\n * @property {object} NULL\n * @property {object} bool - A truthy value enables autolocking; a falsey value disables it.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 279,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_autolock",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A truthy value enables autolocking; a falsey value disables it.",
+                "name": "bool"
+            }
+        ],
+        "longname": "cy_autolock",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set whether nodes are automatically locked (i.e. if `true`, nodes are locked despite their individual state).\n * @memberof cy\n * @param {...cy_autolock} x - Get whether autolocking is enabled. | Set whether autolocking is enabled.\n * @namespace cy.autolock\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 285,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set whether nodes are automatically locked (i.e. if `true`, nodes are locked despite their individual state).",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_autolock"
+                    ]
+                },
+                "variable": true,
+                "description": "Get whether autolocking is enabled. | Set whether autolocking is enabled.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "autolock",
+        "longname": "cy.autolock",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                7034,
+                7058
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 291,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000087",
+                "name": "autolock",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "autolock",
+        "longname": "autolock",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_autoungrabify\n * @property {object} NULL\n * @property {object} bool - A truthy value enables autoungrabifying; a falsey value disables it.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 295,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_autoungrabify",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A truthy value enables autoungrabifying; a falsey value disables it.",
+                "name": "bool"
+            }
+        ],
+        "longname": "cy_autoungrabify",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set whether nodes are automatically ungrabified (i.e. if `true`, nodes are ungrabbale despite their individual state).\n * @memberof cy\n * @param {...cy_autoungrabify} x - Get whether autoungrabifying is enabled. | Set whether autoungrabifying is enabled.\n * @namespace cy.autoungrabify\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 301,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set whether nodes are automatically ungrabified (i.e. if `true`, nodes are ungrabbale despite their individual state).",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_autoungrabify"
+                    ]
+                },
+                "variable": true,
+                "description": "Get whether autoungrabifying is enabled. | Set whether autoungrabifying is enabled.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "autoungrabify",
+        "longname": "cy.autoungrabify",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                7538,
+                7567
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 307,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000091",
+                "name": "autoungrabify",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "autoungrabify",
+        "longname": "autoungrabify",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * @typedef {object} cy_autounselectify\n * @property {object} NULL\n * @property {object} bool - A truthy value enables autounselectifying; a falsey value disables it.\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 311,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "kind": "typedef",
+        "name": "cy_autounselectify",
+        "type": {
+            "names": [
+                "object"
+            ]
+        },
+        "properties": [
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "name": "NULL"
+            },
+            {
+                "type": {
+                    "names": [
+                        "object"
+                    ]
+                },
+                "description": "A truthy value enables autounselectifying; a falsey value disables it.",
+                "name": "bool"
+            }
+        ],
+        "longname": "cy_autounselectify",
+        "scope": "global"
+    },
+    {
+        "comment": "/**\n * Get or set whether nodes are automatically unselectified (i.e. if `true`, nodes are ungrabbale despite their individual state).\n * @memberof cy\n * @param {...cy_autounselectify} x - Get whether autounselectifying is enabled. | Set whether autounselectifying is enabled.\n * @namespace cy.autounselectify\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 317,
+            "columnno": 2,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Get or set whether nodes are automatically unselectified (i.e. if `true`, nodes are ungrabbale despite their individual state).",
+        "memberof": "cy",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "cy_autounselectify"
+                    ]
+                },
+                "variable": true,
+                "description": "Get whether autounselectifying is enabled. | Set whether autounselectifying is enabled.",
+                "name": "x"
+            }
+        ],
+        "kind": "namespace",
+        "name": "autounselectify",
+        "longname": "cy.autounselectify",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8061,
+                8092
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 323,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000095",
+                "name": "autounselectify",
+                "type": "FunctionDeclaration",
+                "paramnames": [
+                    "x"
+                ]
+            }
+        },
+        "undocumented": true,
+        "name": "autounselectify",
+        "longname": "autounselectify",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "comment": "/**\n * Force the renderer to recalculate the viewport bounds.\n * @memberof cy\n * @alias cy,invalidateDimensions\n * @namespace cy.resize\n */",
+        "meta": {
+            "filename": "cy_viewport.js",
+            "lineno": 327,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {}
+        },
+        "description": "Force the renderer to recalculate the viewport bounds.",
+        "memberof": "cy",
+        "alias": "cy,invalidateDimensions",
+        "kind": "namespace",
+        "name": "resize",
+        "longname": "cy.resize",
+        "scope": "static"
+    },
+    {
+        "comment": "",
+        "meta": {
+            "range": [
+                8234,
+                8255
+            ],
+            "filename": "cy_viewport.js",
+            "lineno": 333,
+            "columnno": 0,
+            "path": "/home/rahul/Documents/GSOD/jsdoc_prototype/src",
+            "code": {
+                "id": "astnode100000099",
+                "name": "resize",
+                "type": "FunctionDeclaration",
+                "paramnames": []
+            }
+        },
+        "undocumented": true,
+        "name": "resize",
+        "longname": "resize",
+        "kind": "function",
+        "scope": "global",
+        "params": []
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/home/rahul/Documents/GSOD/jsdoc_prototype/src/cy_viewport.js"
+        ]
+    }
+]

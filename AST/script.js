@@ -1,5 +1,5 @@
 var fs=require('fs');
-var data=fs.readFileSync('/home/rahul/Documents/GSOD/jsdoc_prototype/AST/cy_events.json', 'utf8');
+var data=fs.readFileSync('/home/rahul/Documents/GSOD/jsdoc_prototype/AST/cy_viewport.json', 'utf8');
 var words=JSON.parse(data);
 
 var fns = [];
@@ -27,15 +27,16 @@ for(var i in words)
             var args = {};
             
             //checking whether we have a callback function as an argument
-            if(words[i].properties[j].type.names != 'function')
-            {
-                args.name = words[i].properties[j].name;
-            }
-            else
+            if(words[i].properties[j].type.names == 'function')
             {
                 args.name = types[words[i].properties[j].name][0].name;
 
                 args.fields = types[types[words[i].properties[j].name][0].descr];
+                
+            }
+            else
+            {
+                args.name = words[i].properties[j].name;
             }
             
             args.descr = words[i].properties[j].description;
@@ -133,7 +134,7 @@ for(var i in words)
 }
 
 // save generated file
-fs.writeFile ("cy_events_generated.json", JSON.stringify(fns, null, 4), function(err) {
+fs.writeFile ("cy_viewport_generated.json", JSON.stringify(fns, null, 4), function(err) {
     if (err) throw err;
     console.log('complete');
 });
