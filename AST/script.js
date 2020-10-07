@@ -1,18 +1,17 @@
 var fs=require('fs');
-var data=fs.readFileSync('/home/rahul/Documents/GSOD/jsdoc_prototype/AST/AST.json', 'utf8');
+var data=fs.readFileSync('/home/rahul/Documents/GSOD/jsdoc_prototype/AST/cy_viewport.json', 'utf8');
 var words=JSON.parse(data);
 
 var fns = [];
 
-var candidate = {};
+
 var types = {};
 
 for(var i in words)
 {
     delete words[i].meta;
     if(words[i].comment == "")
-    {   
-        // To remove comment object
+    {
         delete words.splice(i,1);
     }
 }
@@ -28,15 +27,16 @@ for(var i in words)
             var args = {};
             
             //checking whether we have a callback function as an argument
-            if(words[i].properties[j].type.names != 'function')
+            if(words[i].properties[j].type.names == 'function')
             {
-                args.name = words[i].properties[j].name;
+                args.name = types[words[i].properties[j].name][0].name;
+
+                args.fields = types[types[words[i].properties[j].name][0].descr];
+                
             }
             else
             {
-                args.name = types[words[i].properties[j].name][0].name;
-                args.fields = [];
-                args.fields.push(types[types[words[i].properties[j].name][0].descr]);
+                args.name = words[i].properties[j].name;
             }
             
             args.descr = words[i].properties[j].description;
@@ -44,7 +44,7 @@ for(var i in words)
         }
     }
 }
-// console.log(types);
+console.log(types);
 for(var i in words)
 {
     var func = {};
@@ -55,6 +55,18 @@ for(var i in words)
         if(words[i].alias != undefined)
         {
             func.pureAliases = words[i].alias.split("|");
+        }
+
+        // checking for formatSameFn
+        if(words[i].tags != undefined && words[i].tags.find(fn => fn.originalTitle == "formatsSameFn") != undefined)
+        {
+            func.formatsSameFn = words[i].tags.find(fn => fn.originalTitle == "formatsSameFn").value;
+        }
+
+        // checking for extFn
+        if(words[i].tags != undefined && words[i].tags.find(fn => fn.originalTitle == "extFn") != undefined)
+        {
+            func.extFn = words[i].tags.find(fn => fn.originalTitle == "extFn").value;
         }
 
         func.descr = words[i].description;
@@ -86,16 +98,28 @@ for(var i in words)
                 // console.log(descr[j]);
                 if(types[words[i].params[0].type.names[0]][j] != undefined)
                 {
-                    temp.args = [];
-                    temp.args.push(types[words[i].params[0].type.names[0]][j]);
+                    if( types[words[i].params[0].type.names[0]][j].name != 'NULL' )
+                    {
+                        temp.args = [];
+
+                        // Check for multiple arguments
+                        if( types[types[words[i].params[0].type.names[0]][j].name] != undefined )
+                        {
+                            temp.args = types[types[words[i].params[0].type.names[0]][j].name];
+                        }
+                        else
+                        {
+                            temp.args.push(types[words[i].params[0].type.names[0]][j]);
+                        }
+                    }
                 }
                 // console.log(types[words[i].params[0].type.names[0]][j]);
                 func.formats.push(temp);
             }
         }
-        else if (words[i].tags != undefined)
+        else if (words[i].tags != undefined && words[i].tags.find(fn => fn.originalTitle == "param_desc") != undefined)
         {
-           var val = words[i].tags.find(fn => fn.title == "param_desc");
+           var val = words[i].tags.find(fn => fn.originalTitle == "param_desc");
            var arr = {};
            arr.descr = val.value;
            func.formats.push(arr);
@@ -110,11 +134,7 @@ for(var i in words)
 }
 
 // save generated file
-fs.writeFile ("new_generated.json", JSON.stringify(fns, null, 4), function(err) {
+fs.writeFile ("cy_viewport_generated.json", JSON.stringify(fns, null, 4), function(err) {
     if (err) throw err;
     console.log('complete');
 });
-
-
-
-

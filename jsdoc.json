@@ -5,7 +5,7 @@
     "excludePattern": "(node_modules/|docs)"
   },
   "tags": {
-    "allowUnknownTags": ["param_desc"]
+    "allowUnknownTags": ["param_desc", "formatsSameFn","sub_functions", "extFn"]
 },
   "plugins": [ "./node_modules/tsd-jsdoc/dist/plugin"],
   "templates": {
